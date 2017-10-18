@@ -4,6 +4,7 @@
  * @author Laurie White
  * @version April 2012
  */
+import java.lang.String;
 public class StringExplorer
 {
 
@@ -13,15 +14,19 @@ public class StringExplorer
 		
 		//  Demonstrate the indexOf method.
 		int position = sample.indexOf("quick");
-		System.out.println ("sample.indexOf(\"quick\") = " + position);
+		System.out.println ("1sample.indexOf(\"quick\") = " + position);
 		
 		//  Demonstrate the toLowerCase method.
 		String lowerCase = sample.toLowerCase();
-		System.out.println ("sample.toLowerCase() = " + lowerCase);
-		System.out.println ("After toLowerCase(), sample = " + sample);
+		System.out.println ("2sample.toLowerCase() = " + lowerCase);
+		System.out.println ("3After toLowerCase(), sample = " + sample);
 		
 		//  Try other methods here:
-
+                int notForPsn = sample.indexOf("slow");
+                System.out.println("4sample.indexOf(\"slow\") = " + notForPsn);
+                
+                int Psn = sample.indexOf("hi");
+                
 	}
 
 }
